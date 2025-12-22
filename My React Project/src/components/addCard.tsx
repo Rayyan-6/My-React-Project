@@ -1,5 +1,7 @@
 import React, { useState, type FormEvent } from "react";
 import { type CardType } from "../App";
+import '../App.css'
+
 
 type AddCardProps = {
   setCards: React.Dispatch<React.SetStateAction<CardType[]>>;
@@ -12,12 +14,12 @@ function AddCard({ setCards }: AddCardProps) {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    if (!title.trim() || !description.trim()) return; // simple validation
+    if (!title.trim() || !description.trim()) return; 
 
     setCards(prev => [
       ...prev,
       {
-        id: prev.length + 1, // simple ID generator
+        id: prev.length + 1, 
         title,
         description
       }
@@ -28,7 +30,8 @@ function AddCard({ setCards }: AddCardProps) {
   };
 
   return (
-    <form
+    <div className="add-card-parent">
+    <form className="add-card"
       onSubmit={handleSubmit}
       style={{ margin: "16px 0", display: "flex", flexDirection: "column", gap: "8px" }}
     >
@@ -37,28 +40,21 @@ function AddCard({ setCards }: AddCardProps) {
         placeholder="Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
-        style={{ padding: "8px", borderRadius: "8px", border: "1px solid #ccc" }}
+        
       />
       <textarea
         placeholder="Description"
         value={description}
         onChange={e => setDescription(e.target.value)}
-        style={{ padding: "8px", borderRadius: "8px", border: "1px solid #ccc" }}
+         
       />
       <button
         type="submit"
-        style={{
-          padding: "8px 16px",
-          borderRadius: "8px",
-          border: "none",
-          backgroundColor: "#007bff",
-          color: "white",
-          cursor: "pointer"
-        }}
       >
         Add Card
       </button>
     </form>
+    </div>
   );
 }
 

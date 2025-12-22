@@ -8,9 +8,12 @@ type CardsRowProps = {
 
 function CardsRow({ cards }: CardsRowProps) {
   return (
-    <div className="cards-row" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
+    <div className="cards-row" >
       {cards.map((card) => (
-        <Card key={card.id} title={card.title} description={card.description} />
+        <Card key={card.id} 
+        
+        {...card}
+        />
       ))}
     </div>
   );

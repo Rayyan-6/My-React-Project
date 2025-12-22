@@ -50,3 +50,24 @@
   /* background-color: blue; */
   font-size: 20px;
 }
+
+.add-card-parent{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-card{
+   display: "flex";
+   flex-direction: "column";
+   margin: "16px 0"; 
+   gap: "8px" ;
+  /* background-color: blue; */
+  /* align-items: center; */
+  width: 50vw;
+}
+
+/* .add-card > button{
+  width: 100px;
+} */

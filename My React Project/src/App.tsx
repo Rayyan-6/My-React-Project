@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <AddCard setCards={setCards } />
+      <AddCard setCards={setCards} />
       <CardsRow cards={cards}/>
     </>
   )
