@@ -29,6 +29,8 @@ function AddCard({ setCards }: AddCardProps) {
     setDescription("");
   };
 
+
+
   return (
     <div className="add-card-parent">
     <form className="add-card"
@@ -38,12 +40,14 @@ function AddCard({ setCards }: AddCardProps) {
       <input
         type="text"
         placeholder="Title"
+        name="title"
         value={title}
         onChange={e => setTitle(e.target.value)}
         
       />
       <textarea
         placeholder="Description"
+        name="description"
         value={description}
         onChange={e => setDescription(e.target.value)}
          
