@@ -1,6 +1,7 @@
 
 import Card from './card';
 import type { CardType } from '../App';
+import '../App.css'
 
 type CardsRowProps = {
   cards: CardType[];

@@ -1,7 +1,26 @@
-.navbar{
+.nav-bar{
+ 
+  
   background-color: bisque;
   padding: 10px;
   margin: 10px
+}
+
+.nav-bar-list{
+ display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* background-color: red; */
+  padding-left: 10px;
+  
+}
+
+.nav-bar-list > li{
+
+  margin-right: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+
 }
 
 .cards-row{
@@ -71,3 +90,4 @@
 /* .add-card > button{
   width: 100px;
 } */
+

@@ -1,8 +1,17 @@
+import '../App.css'
+
 function NavBar(){
     return(
-        <div className="navbar">
+        <div>
 
-            <nav>Navbar here</nav>
+            <nav className="nav-bar">
+                <ul className='nav-bar-list'>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Blogs</li>
+                </ul>
+            </nav>
         </div>
 
     )

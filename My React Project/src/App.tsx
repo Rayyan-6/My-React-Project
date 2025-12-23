@@ -30,11 +30,8 @@ function App() {
     <>
       <NavBar />
       <AddCard setCards={setCards} />
-
       <Toggle showCards={showCards} setShowCards={setShowCards} />
-      {/* <CardsRow cards={cards} /> */}
-
-{showCards && <CardsRow cards={cards} />}
+      {showCards && <CardsRow cards={cards} />}
     </>
   )
 }
