@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
-function BlogsLayout(){
-    return(
+function BlogsLayout() {
+    return (
         <>
-        <h2>Latest Blogs</h2>
-        <button className="text-3xl">React</button>
-        <button>Node</button>
-        <Outlet />
+        <Link to={'/blogs'}><h2 className="text-3xl my-4">Latest Blogs</h2></Link> 
+            
+            <div className="text-2xl my-4">
+                <Link to={'/blogs/react'}><button className="mx-4">React</button></Link> 
+                <Link to={'/blogs/node'}><button className="mx-4">Node</button></Link> 
+            
+            </div>
+
+            <Outlet />
         </>
     )
 }
