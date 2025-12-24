@@ -1,19 +1,18 @@
+import { Link } from 'react-router-dom'
 import '../App.css'
 
 function NavBar(){
     return(
         <div>
-
             <nav className="nav-bar">
                 <ul className='nav-bar-list'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                    <li>Blogs</li>
+                    <li><Link to='/' >Home</Link></li>
+                    <li><Link to='/about' >About</Link></li>
+                    <li><Link to='/contactus' >Contact Us</Link></li>
+                    <li><Link to='/blogs' >Blogs</Link></li>
                 </ul>
             </nav>
         </div>
-
     )
     
 }
