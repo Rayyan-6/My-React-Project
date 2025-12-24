@@ -9,9 +9,10 @@
 .nav-bar-list{
  display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: right;
   /* background-color: red; */
   padding-left: 10px;
+  padding-right: 50px;
   
 }
 

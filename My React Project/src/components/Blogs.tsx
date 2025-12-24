@@ -1,5 +1,9 @@
+import NavBar from "./navBar"
+
 function Blogs(){
-    return <></>
+    return <>
+    
+    </>
 
 }
 

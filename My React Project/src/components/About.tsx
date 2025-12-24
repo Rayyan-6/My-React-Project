@@ -1,6 +1,9 @@
+import NavBar from "./navBar"
+
 function About(){
     return(
-        <></>
+        <>
+        </>
     )
 
 }

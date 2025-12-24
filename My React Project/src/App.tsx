@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      
       <AddCard setCards={setCards} />
       <Toggle showCards={showCards} setShowCards={setShowCards} />
       {showCards && <CardsRow cards={cards} />}

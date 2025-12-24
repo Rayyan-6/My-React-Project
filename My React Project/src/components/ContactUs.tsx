@@ -1,5 +1,9 @@
+import NavBar from "./navBar"
+
 function ContactUs(){
-    return <></>
+    return <>
+    
+    </>
 
 }
 
