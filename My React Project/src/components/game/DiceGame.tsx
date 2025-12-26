@@ -18,9 +18,27 @@ function DiceGame(){
         } ))
     }
 
-    function rollDice(){
-        return(generateAllDice())
-    }
+    // function rollDice(){
+    //     // return(generateAllDice())
+    //      setDice(oldDice => oldDice.map(die => 
+    //         die.isHeld ?
+    //             die :
+    //             { ...die, value: Math.ceil(Math.random() * 6) }
+    //     ))
+    // }
+
+
+function rollDice() {
+  return dice.map(die =>
+    die.isHeld
+      ? die
+      : { ...die, value: Math.ceil(Math.random() * 6) }
+  )
+}
+
+
+
+
 
     function hold(id: string) {
   setDice(oldDice =>
