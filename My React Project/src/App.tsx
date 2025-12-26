@@ -1,5 +1,4 @@
 import './App.css'
-import NavBar from './components/navBar'
 import CardsRow from './components/cardsRow.tsx'
 import AddCard from './components/addCard.tsx'
 import { useState } from 'react';

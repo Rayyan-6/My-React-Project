@@ -10,6 +10,7 @@ import Layout from './components/Layout.tsx'
 import BlogsLayout from './components/BlogsLayout.tsx'
 import ReactBlogs from './components/ReactBlogs.tsx'
 import NodeBlogs from './components/NodeBlogs.tsx'
+import DiceGame from './components/game/DiceGame.tsx'
 
 
 const router = createBrowserRouter([
@@ -20,11 +21,11 @@ const router = createBrowserRouter([
       { index: true, element: <App /> },
       { path: 'about', element: <About /> },
       { path: 'contactus', element: <ContactUs /> },
+      { path: 'dicegame', element: <DiceGame /> },
       { path: 'blogs', element: <BlogsLayout />,
         children: [
           {
             index:true, element: <Blogs />,
-
           },
           {
             path: 'react', element: <ReactBlogs />

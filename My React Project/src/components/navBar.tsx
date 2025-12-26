@@ -10,6 +10,7 @@ function NavBar(){
                     <li><Link to='/about' >About</Link></li>
                     <li><Link to='/contactus' >Contact Us</Link></li>
                     <li><Link to='/blogs' >Blogs</Link></li>
+                    <li><Link to='/dicegame' >Dice Game</Link></li>
                 </ul>
             </nav>
         </div>

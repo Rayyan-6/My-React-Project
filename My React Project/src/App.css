@@ -92,3 +92,38 @@
   width: 100px;
 } */
 
+.dice-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dice-row{
+  height: auto;
+  /* background-color: red; */
+  /* width: auto; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 35%;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+.die{
+  background-color: rgb(34, 209, 34);
+  /* width: 150px;
+  height: 150px; */
+  max-width: 150px;
+
+  font-size: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
